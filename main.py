@@ -2,8 +2,14 @@ import asyncio
 
 from aiogram import Bot, Dispatcher, executor
 
-BOT_TOKEN = "1644044930:AAFifiK6s4vlXRJBxo5CWLNls9mHQD9AcM0"
-admin_id = 484295072
+BOT_TOKEN = None
+admin_id = None
+
+with open("token.txt") as f:
+    BOT_TOKEN = f.read().strip()
+
+with open("admin_id.txt") as f:
+    admin_id = f.read().strip()
 
 # variables
 stack = []
