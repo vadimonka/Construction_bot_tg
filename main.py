@@ -7,7 +7,6 @@ admin_id = None
 
 with open("token.txt") as f:
     BOT_TOKEN = f.read().strip()
-
 with open("admin_id.txt") as f:
     admin_id = f.read().strip()
 
